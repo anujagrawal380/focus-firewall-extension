@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Firewall Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="section">
+      <h2>BLOCKED WEBSITES</h2>
+      <div id="blockedList" class="blocked-list"></div>
+      <div class="add-website">
+        <input 
+          type="text" 
+          id="newWebsite" 
+          placeholder="example.com"
+        />
+        <button id="addWebsiteBtn">ADD</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>YOUR TODOS</h2>
+      <div id="todosList" class="todos-list"></div>
+      <div class="add-todo">
+        <input 
+          type="text" 
+          id="newTodo" 
+          placeholder="What should you be doing instead?"
+        />
+        <select id="todoPriority" class="priority-select">
+          <option value="high">High</option>
+          <option value="medium" selected>Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <button id="addTodoBtn">ADD</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>ACCESS HISTORY</h2>
+      <div id="accessHistory" class="access-history"></div>
+      <button id="clearHistoryBtn" class="clear-btn">CLEAR HISTORY</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Firewall - Access Blocked</title>
+  <link rel="stylesheet" href="block.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="blocked-url">
+      <span class="label">BLOCKED:</span>
+      <span id="blockedUrl" class="url"></span>
+    </div>
+
+    <div class="todos-section" id="todosSection" style="display: none;">
+      <h2>MORE IMPORTANT THINGS TO DO:</h2>
+      <ul id="todoList" class="todo-list"></ul>
+    </div>
+
+    <div class="explanation-section">
+      <h2>EXPLAIN YOUR REASON</h2>
+      <p class="instruction">
+        Why do you need to access this website right now? 
+        Write a detailed explanation (minimum 100 characters).
+      </p>
+      <textarea 
+        id="explanation" 
+        placeholder="I need to access this website because..."
+        rows="6"
+      ></textarea>
+      <div class="char-count">
+        <span id="charCount">0</span> / 100 characters
+      </div>
+      <button id="proceedBtn" disabled>PROCEED</button>
+      <button id="cancelBtn" class="secondary">GO BACK</button>
+    </div>
+  </div>
+
+  <script src="block.js"></script>
+</body>
+</html>
