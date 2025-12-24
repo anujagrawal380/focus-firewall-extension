@@ -1,7 +1,8 @@
 # Focus Firewall - Browser Extension
 
 An extension that helps break procrastination habits by requiring detailed explanations before accessing distracting websites. It breaks the easy access path we have to the applications that harm our productivity.
-Simple Rule: Every action should have a reason.
+
+### Simple Rule: Every action should have a reason.
 
 ## Installation
 
